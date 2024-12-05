@@ -1516,9 +1516,9 @@ generated](./media/image167.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image168.png)
 
-**Note** – The SmartHotelHost VM is stopped as it is a Standard D8s VM
-which will consume Azure Pass credits if it is left running, which may
-result in insufficient credits to complete the remaining lab.\*\*
+    > **Note** – The SmartHotelHost VM is stopped as it is a Standard D8s VM
+    which will consume Azure Pass credits if it is left running, which may
+    result in insufficient credits to complete the remaining lab.
 
 **Summary**
 
