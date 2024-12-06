@@ -1,4 +1,4 @@
-# Lab 6 – PostgreSQL Database Online Migration
+# Lab 06 – PostgreSQL Database Online Migration
 
 ## Objective:
 
