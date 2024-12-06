@@ -32,7 +32,7 @@ resource group, and resource.
 ![Diagram showing the scope levels for Azure RBAC.](./media/image1.png)
 
 1.  Switch back to Azure portal tab or open new tab and navigate to
-    **Azure portal** - +++https://portal.azure.com+++. Sign in with your
+    **Azure portal** - `https://portal.azure.com`. Sign in with your
     Office 365 tenant credentials.
 
 2.  In the Search box at the top, search for the scope you want to grant
@@ -40,13 +40,13 @@ resource group, and resource.
     for **Management groups**, **Subscriptions**, **Resource groups**,
     or a specific resource.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image2.png)
 
 3.  Click the specific resource for that scope. The following shows an
     example resource group.
 
-![BrokenImage](./media/image3.png)
+    ![](./media/image3.png)
 
 ### Task 2: Open the Add role assignment page
 
@@ -59,18 +59,18 @@ allow to view and manage Cost configuration.
 1.  Click **Access control (IAM)**. The following shows an example of
     the **Access control (IAM)** page for a resource group.
 
-![BrokenImage](./media/image4.png)
+    ![](./media/image4.png)
 
 2.  Click the **Role assignments** tab to view the role assignments at
     this scope.
 
-![BrokenImage](./media/image5.png)
+    ![](./media/image5.png)
 
-3.  Click **Add** \> **Add role assignment**. If you don't have
+3.  Click **Add** \ **Add role assignment**. If you don't have
     permissions to assign roles, the Add role assignment option will be
     disabled.
 
-![BrokenImage](./media/image6.png)
+    ![](./media/image6.png)
 
 The **Add role assignment** page opens.
 
@@ -80,12 +80,12 @@ The **Add role assignment** page opens.
     search for a role by **name** or by **description**. You can also
     filter roles by type and category.
 
-![BrokenImage](./media/image7.png)
+    ![](./media/image7.png)
 
 2.  In the search box type **cost** and then select the **Cost
     Management Contributor** role and click on **Next**.
 
-![BrokenImage](./media/image8.png)
+    ![](./media/image8.png)
 
 ### Task 4: Select who needs access
 
@@ -97,19 +97,19 @@ The **Add role assignment** page opens.
 2.  From the listed member select **MOD Administrator** and then click
     on **Select**.
 
-![Graphical user interface, text, application, chat or text message
+    ![Graphical user interface, text, application, chat or text message
 Description automatically generated](./media/image9.png)
 
 3.  Optionally you can assign the selected role to one or more managed
     identities, select **Managed identity**.
 
-![BrokenImage](./media/image10.png)
+    ![](./media/image10.png)
 
 4.  In the **Description** box enter an optional description for this
     role assignment. Later you can show this description in the role
     assignments list.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image11.png)
 
 5.  Click **Review + assign**.
@@ -118,12 +118,12 @@ automatically generated](./media/image11.png)
 
 1.  On the **Review + assign** tab, review the role assignment settings.
 
-![BrokenImage](./media/image12.png)
+    ![](./media/image12.png)
 
 2.  Click **Review + assign** to assign the role. After a few moments,
     the security principal is assigned the role at the selected scope.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image13.png)
 
 3.  If you don't see the description for the role assignment,
@@ -145,15 +145,15 @@ deploy the VM using an ARM-Template.
 1.  On the Azure Portal, click on **+ Create a resource**, then
     type **Key Vault** and select it, then click on **Create**.
 
-![BrokenImage](./media/image14.png)
+    ![](./media/image14.png)
 
 2.  On the Basics tab, provide the below details
 
     - Subscription – select your **Subscription**
 
-    - Resource group – Create new – +++RG4KeyVault+++
+    - Resource group – Create new – `RG4KeyVault`
 
-    - Key vault name - +++KeyVaultXXXXXX+++ \[Substitute **XXXXXX** with
+    - Key vault name - `KeyVaultXXXXXX` \[Substitute **XXXXXX** with
       random number\]
 
     - Region – **West US**
@@ -162,81 +162,81 @@ deploy the VM using an ARM-Template.
 
     - Click on **Next**
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image15.png)
 
 3.  On the **Access policy** tab, ensure to enable all 3 check boxes,
     then click **Review +** **create.**
 
-![Graphical user interface, text, application, chat or text message,
+    ![Graphical user interface, text, application, chat or text message,
 email Description automatically generated](./media/image16.png)
 
 4.  Click on **Create** after the Validation is passed.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image17.png)
 
 5.  Click on **Go to resource** once the Deployment is completed.
 
-![BrokenImage](./media/image18.png)
+    ![](./media/image18.png)
 
 6.  Click on **Access Control (IAM)**, then select **+ Add** and
     choose **Add role assignment**
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image19.png)
 
 7.  Select the Role **Key Vault Administrator**, then click on **Next**
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image20.png)
 
 8.  Click on **+ Select members**, choose **MOD Administrator** account
     and click on **Select** button, then click on **Next**
 
-![Screens screenshot of a computer Description automatically
+    ![Screens screenshot of a computer Description automatically
 generated](./media/image21.png)
 
 9.  Click on **Review + assign** button
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image22.png)
 
 10. On the **KeyVault4Testing** click on **Secrets** under Objects, then
     click on + **Generate/Import**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image23.png)
 
 11. Provide the details as Name – **VMPassword**, Secret Value
     – **demo!pass123** then click on **Create**
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image24.png)
 
 12. Verify that the **Secret** is listed as shown.
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image25.png)
 
 13. Click on **Properties** under Settings, then copy the **Resource
     ID**, as it would be required for deployment of VM, you can save it
     in a notepad file.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image26.png)
 
 14. Now we will gather the Template file for deployment.
 
 15. Click on **+ Create a resource**, then in the search type **Windows
-    10**, select **Microsoft Windows 10**. ![Graphical user interface,
+    10**, select **Microsoft Windows 10**.     ![Graphical user interface,
     application Description automatically
     generated](./media/image27.png)
 
 16. From drop down choose **Window 10 Pro, Version 22H2**, then click
     on **Create**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image28.png)
 
 17. On the Basics tab, provide the below and leave rest information as
@@ -246,89 +246,79 @@ generated](./media/image28.png)
 
     - Resource group – **RG4KeyVault**
 
-    - Virtual Machine name – +++Win10VM1+++
+    - Virtual Machine name – `Win10VM1`
 
     - Region – **West US**
 
     - Security type – **Standard**
 
-**Note** – If you did not change the Security type to Standard then the
-Backup task will fail
+    > **Note** – If you did not change the Security type to Standard then the
+    Backup task will fail
 
-- Username – +++demouser+++
+    - Username – `demouser`
 
-- Password – **enter any** **random** **password**.
+    - Password – **enter any** **random** **password**.
 
-- Select check box “**I confirm I have an eligible Windows 10 license
-  with multi-tenant hosting rights**”
+    - Select check box “**I confirm I have an eligible Windows 10 license
+    with multi-tenant hosting rights**”
 
-- Click on **Review + create**.
+    - Click on **Review + create**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image29.png)
 
-![Graphical user interface, application, email Description automatically
+    ![Graphical user interface, application, email Description automatically
 generated](./media/image30.png)
 
 17. On the **Validation** page, click on **Download a template for
     automation**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image31.png)
 
 18. Click on **Download** again to download the template and
     parameter ***json files*** in the Zip format.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image32.png)
 
 19. Open and extract the **template.zip** file on the Desktop.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image33.png)
 
 20. Now open the **parameter.json** file in Notepad, we need to replace
     the highlighted section for the password.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image34.png)
 
 21. We need to locate the following section:
 
-> *+++*
->
-> *"adminPassword": {*
->
-> *"value": null*
->
-> *}*
+    > "adminPassword": {
+    >
+    >"value": null
+    >
+    >},
 
 22. Replace this with the following:
 
-> "adminPassword": {
->
-> "reference": {
->
-> "keyVault": {
->
-> "id": "your KeyVaultID"
->
-> },
->
-> "secretName": "VMPassword"
->
-> }
->
-> },
->
-> +++
+    #
+        "adminPassword": {
+        "reference": {
+        "keyVault": {
+        "id": "your KeyVaultID"
+        },
+        "secretName": "VMPassword"
+        }
+        },
 
 23. Substitute the Key Vault resource ID collected earlier
     for **KeyVaultID** and the VM Password secret created in step no. 8
     for **KeyVaultSecret**. The final code should look like the
     following:
 
-![BrokenImage](./media/image35.png)
+    ![](./media/image35.png)
 
 24. You can change other Parameters in the file to suit your deployment
     requirement, for this Lab let’s keep it simple.
@@ -341,66 +331,66 @@ generated](./media/image34.png)
 27. Upload both the **JSON** files one by one using the upload button as
     shown in below image.
 
-![Graphical user interface, text Description automatically
+    ![Graphical user interface, text Description automatically
 generated](./media/image36.png)
 
 28. Type the below commands in the Cloud Shell to enable template
     deployment.
 
-> +++az keyvault update --name KeyVaultXXXXX
-> --enabled-for-template-deployment true+++
+    `az keyvault update --name KeyVaultXXXXX
+    --enabled-for-template-deployment true`
 
-**Note** -Substitute **XXXXXX** with the random number of your key vault
+    > **Note** -Substitute **XXXXXX** with the random number of your key vault
 
-![BrokenImage](./media/image37.png)
+    ![](./media/image37.png)
 
 29. Run the below command to start the deployment.
 
-> +++az deployment group create --resource-group "RG4KeyVault"
-> --template-file template.json --parameters parameters.json+++
+    `az deployment group create --resource-group "RG4KeyVault"
+    --template-file template.json --parameters parameters.json`
 
-**Note** -Substitute **XXXXXX** with the random number of your key vault
+    > **Note** -Substitute **XXXXXX** with the random number of your key vault
 
-![BrokenImage](./media/image38.png)
+    ![](./media/image38.png)
 
-The Deployment has started and will take around **5-7** minutes to
-complete.
+    The Deployment has started and will take around **5-7** minutes to
+    complete.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image39.png)
 
 30. Once the Deployment is **Succeeded**, we can go to the Resource
     group **RG4KeyVault** and click on the **Deployed VM**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image40.png)
 
 31. On the **Win10VM1** page, click on **Connect**, the select **RDP**
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image41.png)
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image42.png)
 
 32. Click on **Download RDP** file, run it and connect to the VM using
     the below details.
 
-    - Username – +++demouser+++
+    - Username – `demouser`
 
     - Password – As specified in the **KeyVault** secret
-      – +++demo!pass123+++
+      – `demo!pass123`
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image43.png)
 
 33. If all the configuration is done correctly then we should be able to
     login.
 
-![Graphical user interface, text, website Description automatically
+    ![Graphical user interface, text, website Description automatically
 generated](./media/image44.png)
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image45.png)
 
 34. So, we have successfully utilized the Azure Key Vault to store are
@@ -438,60 +428,60 @@ backups, performing restores, and creating backup policies.
 To create a Recovery Services vault:
 
 1.  Switch back to Azure portal or navigate
-    to +++https://portal.azure.com+++ and sign in with your Office 365
+    to `https://portal.azure.com` and sign in with your Office 365
     tenant credentials.
 
 2.  Search for **Backup center** in the Azure portal, and go to
     the **Backup Center** dashboard.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image46.png)
 
 3.  Select **+Vault** from the **Overview** tab.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image47.png)
 
-4.  Select **Recovery Services vault** \> **Continue**.
+4.  Select **Recovery Services vault** \ **Continue**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image48.png)
 
 5.  The **Recovery Services vault** dialog opens. Provide the following
     values:
 
-- Subscription: **Azure Pass - Sponsorship**
+    - Subscription: **Azure Pass - Sponsorship**
 
-- Resource group: select Create new : +++Azurebackup-rg+++
+    - Resource group: select Create new : `Azurebackup-rg`
 
-- Vault name: +++BkpVaultXXXXXX+++ (Substitute **XXXXXX** with random
-  number).
+    - Vault name: `BkpVaultXXXXXX` (Substitute **XXXXXX** with random
+    number).
 
-- Region: **East US**
+    - Region: **East US**
 
-- After you provide the values, select **Review + create**.
+    - After you provide the values, select **Review + create**.
 
-***Important***
+    >***Important***
+    >
+    >*If you're not sure of the location of your data source, close the
+    dialog. Go to the list of your resources in the portal. If you have data
+    sources in multiple regions, create a Recovery Services vault for each
+    region. Create the vault in the first location before you create the
+    vault for another location. There's no need to specify storage accounts
+    to store the backup data. The Recovery Services vault and Azure Backup
+    handle that automatically.*
 
-*If you're not sure of the location of your data source, close the
-dialog. Go to the list of your resources in the portal. If you have data
-sources in multiple regions, create a Recovery Services vault for each
-region. Create the vault in the first location before you create the
-vault for another location. There's no need to specify storage accounts
-to store the backup data. The Recovery Services vault and Azure Backup
-handle that automatically.*
-
-![BrokenImage](./media/image49.png)
+    ![](./media/image49.png)
 
 6.  When you're ready to create the Recovery Services vault,
     select **Create**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image50.png)
 
 7.  Wait for the deployment to complete.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image51.png)
 
 ### Task 2 : Apply a backup policy
@@ -501,27 +491,27 @@ To apply a backup policy to your Azure VMs, follow these steps:
 1.  Go to **Backup center** and click **+Backup** from
     the **Overview** tab.
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image52.png)
 
 2.  Select **Azure Virtual machines** as the **Datasource type** and
     select the **vault** you have created. Then click **Continue**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image53.png)
 
-![BrokenImage](./media/image54.png)
+    ![](./media/image54.png)
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image55.png)
 
 3.  Assign a **Backup policy**. The default policy backs up the VM once
     a day. The daily backups are retained for ***30 days***. Instant
     recovery snapshots are retained for two days.
 
-![BrokenImage](./media/image56.png)
+    ![](./media/image56.png)
 
-***Note** : If you don't want to use the default policy, select **Create
+>**Note** : If you don't want to use the default policy, select **Create
 New**, and create a custom policy as described in the next procedure.*
 
 You have completed this task, please proceed ahead with the next task
@@ -541,7 +531,7 @@ Create a simple scheduled daily backup to a Recovery Services vault.
 
     3.  VMs can only be backed up in a single vault.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image57.png)
 
 **Note:** All the migrated VMs in the same region and subscription as
@@ -567,12 +557,12 @@ to restore data to a given point in time.
     deploys the policy to the vault and to the VMs, and installs the
     backup extension on the VM agent running on the Azure VM.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image58.png)
 
-![BrokenImage](./media/image59.png)
+    ![](./media/image59.png)
 
-**After enabling backup:**
+> **After enabling backup:**
 
 - The Backup service installs the backup extension whether or not the VM
   is running.
@@ -593,7 +583,7 @@ automatically generated](./media/image58.png)
 
 You have completed this task, please proceed ahead with the next task
 
-**Create a custom policy (Optional)**
+> **Create a custom policy (Optional)**
 
 If you selected to create a new backup policy, fill in the policy
 settings.
@@ -615,9 +605,9 @@ settings.
     - You can retain snapshots for instant restore for between one to
       five days. The default value is two days.
 
-**Note** Azure Backup doesn't support automatic clock adjustment for
-daylight-saving changes for Azure VM backups. As time changes occur,
-modify backup policies manually as required.
+    > **Note** Azure Backup doesn't support automatic clock adjustment for
+    daylight-saving changes for Azure VM backups. As time changes occur,
+    modify backup policies manually as required.
 
 ### Task 5 : Start a backup job
 
@@ -627,7 +617,7 @@ run it immediately as follows:
 1.  Go to **Backup center** and select the **Backup Instances** menu
     item.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image60.png)
 
 2.  Select **Azure Virtual machines** as the **Datasource type**. Then
@@ -636,22 +626,22 @@ generated](./media/image60.png)
 3.  Right-click **smarthotelweb1** or **smarthotelweb1** and then click
     on the ellipsis (…), and then select **Backup Now**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image61.png)
 
 4.  In **Backup Now**, use the calendar control to select the last day
     that the recovery point should be retained. Set the date 30 Days
     from the present day, then select **OK**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image62.jpeg)
 
 5.  Monitor the portal notifications. To monitor the job progress, go
-    to **Backup center** \> **Backup Jobs** and filter the list for **In
+    to **Backup center** \ **Backup Jobs** and filter the list for **In
     progress** jobs. Depending on the size of your VM, creating the
     initial backup may take a while.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image63.png)
 
 You have completed this task, please proceed ahead with the next task
@@ -668,13 +658,13 @@ the **Snapshot** phase followed by the **Transfer data to vault** phase.
     recovery point in the vault for long-term retention. **Transfer
     data** to vault only starts after the snapshot phase is completed.
 
-![BrokenImage](./media/image64.png)
+    ![](./media/image64.png)
 
 2.  There are two **Sub Tasks** running at the backend, one for
     front-end backup job that can be checked from the **Backup
     Job** details pane.
 
-![BrokenImage](./media/image65.png)
+    ![](./media/image65.png)
 
 You have completed this task, please proceed ahead with the next task
 
@@ -691,34 +681,34 @@ steps.
 1.  Select the Resource group **Azurebackup-rg** and then
     select **Recovery Service** **Vault**.
 
-![BrokenImage](./media/image66.png)
+    ![](./media/image66.png)
 
 2.  Select **Backup items** from left navigation and then select **Azure
     virtual** **machine**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image67.png)
 
 3.  From the list of the Virtual Machines, click on the ellipsis
     of **smarthotelweb1** and select **Stop backup.**
 
-![BrokenImage](./media/image68.png)
+    ![](./media/image68.png)
 
 4.  On the **Stop backup** page, provide the below details
 
     - Stop backup level – **Delete backup data**
 
-    - Type the name of the backup item – +++smarthotelweb1+++
+    - Type the name of the backup item – `smarthotelweb1`
 
     - Reason – **Other**
 
-    - Comment – +++Testing completed+++
+    - Comment – `Testing completed`
 
-![BrokenImage](./media/image69.png)
+    ![](./media/image69.png)
 
 5.  Click on **Stop backup** button.
 
-![Text Description automatically generated](./media/image70.png)
+    ![Text Description automatically generated](./media/image70.png)
 
 6.  Repeat the same steps for the below VMs
 
@@ -729,29 +719,29 @@ generated](./media/image67.png)
 7.  **Refresh** and the status should now appear as shown in the below
     image
 
-![BrokenImage](./media/image71.png)
+    ![](./media/image71.png)
 
 8.  While still on the Recovery Service Vault page, click
     on **Properties** under Setting, select the **Update** link
     under **Soft delete and security settings**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image72.jpeg)
 
 9.  Uncheck the check boxes for **Soft delete** and then click on
     the **Update** button.
 
-![BrokenImage](./media/image73.png)
+    ![](./media/image73.png)
 
 10. You should get the notification as shown in below image.
 
-![Graphical user interface, text Description automatically generated
+    ![Graphical user interface, text Description automatically generated
 with medium confidence](./media/image74.png)
 
 11. Select **Backup items** from left navigation and then select Azure
     virtual machine.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image67.png)
 
 12. From the list of the Virtual Machines, click on the ellipsis of
@@ -760,25 +750,25 @@ generated](./media/image67.png)
 13. Then right-click again on smarthotelweb1, and select **Delete backup
     data**
 
-![BrokenImage](./media/image75.png)
+    ![](./media/image75.png)
 
 14. On the **Delete backup** page, provide the below details
 
-    - Type the name of the backup item – +++smarthotelweb1+++
+    - Type the name of the backup item – `smarthotelweb1`
 
     - Reason – **Other**
 
-    - Comment – +++Testing completed+++
+    - Comment – `Testing completed`
 
 15. Click on the **Delete** button
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image76.png)
 
 16. You should get the notification as shown in below image, and you
     will also notice that the backup has been successfully deleted too
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image77.png)
 
 17. Repeat the same steps for the below VMs
@@ -789,7 +779,7 @@ generated](./media/image77.png)
 
 18. From the Azure Portal menu or home page, select **Resource groups**.
 
-![Graphical user interface, application, Word Description automatically
+    ![Graphical user interface, application, Word Description automatically
 generated](./media/image78.png)
 
 19. From the list, choose your resource group. If you used the sample VM
@@ -797,24 +787,24 @@ generated](./media/image78.png)
 
 20. Select **Delete resource group**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image79.png)
 
 21. To confirm, enter the resource group name, then select **Delete**.
 
-![BrokenImage](./media/image80.png)
+    ![](./media/image80.png)
 
 22. Once the Resource group is deleted it will give confirmation
     notification as shown in the below image.
 
-![BrokenImage](./media/image81.png)
+    ![](./media/image81.png)
 
 23. Click on Resource groups and select the **SmartHotelRG** Resource
     group and select the Application gateway – **SmartHotel-WAF** and
     then delete it, to ensure that we have sufficient credits to
     complete Activity 5.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image82.png)
 
 ## Exercise 4: Enable Microsoft Defender for Cloud
@@ -826,53 +816,53 @@ for Cloud features *to be fully visible*. We will be using the
 information that the Microsoft Defender for Cloud collects through-out
 these labs in the last Lab.
 
-1.  On the Azure Portal click on portal menu and select +++Microsoft
-    Defender for Cloud+++.
+1.  On the Azure Portal click on portal menu and select `Microsoft
+    Defender for Cloud`.
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image83.png)
 
 2.  Click on **Getting started** page from the left pane, On
     the Upgrade Tab, select subscription (**Azure Pass – Sponsorship**)
     and press **Upgrade**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image84.png)
 
-**Note:** You may need to wait for a few minutes for the upgrade to
-complete.
+    > **Note:** You may need to wait for a few minutes for the upgrade to
+    complete.
 
 3.  You should get the notification as shown in below image.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image85.png)
 
 4.  Click on the **Getting started**, then click on **Install
     agents** tab, then select the Azure Subscription and click **Install
     agents** to install agents to the resources in the subscription.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image86.png)
 
 5.  You should get the notification as shown in below image.
 
-![Graphical user interface, text Description automatically
+    ![Graphical user interface, text Description automatically
 generated](./media/image87.png)
 
 6.  Click on the Portal Menu and select **+ Create a resource.**
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image88.png)
 
 7.  In the search box type log analytics and then click on **Log
     Analytics Workspace**.
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image89.png)
 
 8.  Click on the Create button.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image90.png)
 
 9.  On the Create Log Analytics workspace page, on the **Basics** tab,
@@ -880,52 +870,52 @@ automatically generated](./media/image90.png)
 
     - Subscription – **Azure Pass - Sponsorship**
 
-    - Resource group – click on Create new - +++RG4LAW+++
+    - Resource group – click on Create new - `RG4LAW`
 
-    - Name – +++LAW4mdfc
+    - Name – `LAW4mdfc
 
     - Region – **West US**
 
     - Click on **Review + Create**
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image91.png)
 
 10. After the Validation is passed, click on **Create**.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image92.png)
 
 11. Wait for the deployment to complete.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image93.png)
 
 12. Click on portal menu and select **Microsoft Defender for Cloud**.
 
-![Graphical user interface, application Description automatically
+    ![Graphical user interface, application Description automatically
 generated](./media/image83.png)
 
 13. Click on **Getting started** page from the left pane, On
     the **Upgrade** tab, select all listed Workspaces and
     press **Upgrade**.
 
-![Graphical user interface, application, Word Description automatically
+    ![Graphical user interface, application, Word Description automatically
 generated](./media/image94.png)
 
 14. You should get the notifications as shown in the below image.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image95.png)
 
 15. Click on **Environment settings** under Management then
     Subscription – **Azure Pass - Sponsorship**
 
-![BrokenImage](./media/image96.png)
+    ![](./media/image96.png)
 
 16. Click on **Settings & monitoring**.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image97.png)
 
 17. On the **Settings & monitoring** page, click **On** for
@@ -934,58 +924,58 @@ automatically generated](./media/image97.png)
 18. Click on the **Fix** link for Log Analytics agent/Azure Monitor
     agent.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image98.png)
 
 19. When prompted click on the **Enable** button.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image99.png)
 
 20. Click on **Continue** button.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image100.png)
 
 21. Click on the **Save** button.
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image101.png)
 
 22. You should get the notification as shown in below image.
 
-![Graphical user interface, text, application Description automatically
+    ![Graphical user interface, text, application Description automatically
 generated](./media/image102.png)
 
-**Note:** This Task was to enable the Microsoft Defender for Cloud, it
-will take *24 hours* for the Subscription data, recommendations, and
-other Defender for Cloud features *to be fully.*
+    > **Note:** This Task was to enable the Microsoft Defender for Cloud, it
+    will take *24 hours* for the Subscription data, recommendations, and
+    other Defender for Cloud features *to be fully.*
 
 ### Task 1 – Stop the VMs to save credits
 
 1.  While still in the Azure Portal click on Portal Menu then select
     Virtual Machines or open the link
-    - https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FVirtualMachines
+    - `https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FVirtualMachines`
 
 2.  Select all the listed VMs and then click on the ellipsis **…** and
     then click on **Stop** button.
 
-![BrokenImage](./media/image103.png)
+    ![](./media/image103.png)
 
 3.  Click on **Yes** to confirm
 
-![Graphical user interface, text Description automatically
+    ![Graphical user interface, text Description automatically
 generated](./media/image104.png)
 
 4.  You should get the notification as shown below.
 
-![Text Description automatically generated with low
+    ![Text Description automatically generated with low
 confidence](./media/image105.png)
 
 5.  Verify that all the VMs are showing the status as **Stopped
     (deallocated)**
 
-![Graphical user interface, text, application, email Description
+    ![Graphical user interface, text, application, email Description
 automatically generated](./media/image106.png)
 
 **Summary**
@@ -1004,7 +994,7 @@ generated](./media/image39.png)
 We should have successfully used the Recovery Service Vault to store the
 backup for the migrated VMs.
 
-![BrokenImage](./media/image65.png)
+![](./media/image65.png)
 
 Lastly, we will enable Microsoft Defender for Cloud and do the necessary
 configuration.
