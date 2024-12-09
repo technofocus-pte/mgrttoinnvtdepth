@@ -989,7 +989,7 @@ generated](./media/image134.png)
  generated](./media/image135.png)
 
 13. In the Incident ARM ID,
-    type `@triggerBody()?\['object'\]?\['id'\]`
+    type `@triggerBody()?['object']?['id']`
 
 14. In the comment section type - `This comment marks the successful
     run of our custom playbook`
